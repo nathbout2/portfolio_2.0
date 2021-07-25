@@ -18,18 +18,30 @@ body{
 }
 
 
+h1{
+  font-family:"Branic";
+  font-size:clamp(2rem, 20vw, 10rem) ;
+  font-weight:lighter;
+}
+h2{
+  font-family:"Branic";
+  font-size:clamp(2rem, 20vw, 10rem) ;
+  font-weight:lighter;
+  align-items: center;
+  display: flex;
+}
+h3{
+  font-family:"Branic";
+  font-size:clamp(1rem, 10vw, 5rem) ;
+  font-weight:lighter;
+}
 
-.header__langingpage{
+
+header{
   height: 100vh;
   align-items: center;
   justify-content: center;
   display: flex;
-}
-
-.header__title{
-  text-align: center;
-  font-family:"Branic";
-  font-size:clamp(2rem, 20vw, 10rem) ;
 }
 
 
@@ -123,9 +135,14 @@ header{
 }
 
 
-/**projet*/
-
 .header_projet{
+  display: flex;
+  justify-content: center;
+}
+
+/*projet*/
+
+.h3{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,6 +151,10 @@ header{
 
 }
 
+.header_contact{
+  display: flex;
+  justify-content: center;
+}
 
 
 @media screen and (min-width: 30rem) {
