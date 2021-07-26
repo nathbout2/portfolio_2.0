@@ -9,3 +9,5 @@ sr.reveal('.photo,.txt,.photo2,.photo3,.container_projet,.wrapper,.start_projet,
 sr.reveal('.title_contact,.start_projet_txt',{
     delay:300
 })
+
+

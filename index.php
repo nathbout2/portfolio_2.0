@@ -20,8 +20,19 @@
     </head>
     <body>
 
+
+    <div class="menu">
+  <div class="label">Menu</div>
+  <div class="spacer"></div>
+  <div class="item"><span>Projet</span></div>
+  <div class="item"><span>Contact</span></div>
+  <div class="item"><span>Github</span></div>
+  <div class="item"><span>LinkedIn</span></div>
+</div>
+
 <header>
         <h1>Portfolio</h1>
+        <h3>Boutaud Nathan</h3>
         <div class="box">
             <span></span>
             <span></span>
@@ -42,9 +53,7 @@
 
 
     <div class="container_start_projet">
-        <div class="start_projet">
-            <h2>Projet</h2>
-        </div>
+        <h2>Projet</h2>
     </div>
 
 
