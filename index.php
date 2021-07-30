@@ -57,7 +57,7 @@
     </div>
 
 
-    <section>
+    <section class ="projet">
         <div class="header_projet">
             <h3>Fil d'ariane</h3>
         </div>
