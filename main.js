@@ -3,10 +3,10 @@ const sr =ScrollReveal({
     distance:'50px',
 });
 
-sr.reveal('.photo,.txt,.photo2,.photo3,.container_projet,.wrapper,.start_projet,.container_presentation,.header_contact',{
+sr.reveal('.presentation,h2,.header_projet,.projet,projet_picturet',{
 });
 
-sr.reveal('.title_contact,.start_projet_txt',{
+sr.reveal('h2,.header_projet,.projet,projet_picturet,.contact',{
     delay:300
 })
 

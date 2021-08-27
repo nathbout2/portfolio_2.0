@@ -24,10 +24,10 @@
     <div class="menu">
   <div class="label">Menu</div>
   <div class="spacer"></div>
-  <div class="item"><span>Projet</span></div>
-  <div class="item"><span>Contact</span></div>
-  <div class="item"><span>Github</span></div>
-  <div class="item"><span>LinkedIn</span></div>
+  <div class="item"><a href="#container_start_projet"><span>Projet</span></a></div>
+  <div class="item"><a href="#contact"><span>Contact</span></a></div>
+  <div class="item"><a href="https://github.com/nathbout2"><span>Github</span></a></div>
+  <div class="item"><a href="https://www.linkedin.com/in/nathan-boutaud/"><span>LinkedIn</span></a></div>
 </div>
 
 <header>
@@ -52,7 +52,7 @@
     </section>
 
 
-    <div class="container_start_projet">
+    <div id="container_start_projet"class="container_start_projet">
         <h2>Projet</h2>
     </div>
 
@@ -72,15 +72,18 @@
         </div>
     </section>
     
-   <section class="contact">
-        <div class="header_contact">
-            <h2>contact</h2>
-        </div>
-        <div class="wrapper">
-                <input type="text" class="name formEntry" placeholder="Name" />
-                <input type="text" class="email formEntry" placeholder="Email"/>
-                <textarea class="message formEntry" placeholder="Message"></textarea>
-                <button class="submit formEntry">Envoyer</button>
+   <section id="contact" class="contact">
+    <h1>Contact</h1>
+    <div class="container">
+            <form action="/action_page.php">
+                <input type="text" id="fname" name="firstname" placeholder="Name">
+
+                <input id="emailAddress" type="email" name="email" placeholder="Email">
+
+                <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+                <input type="submit" value="Send">
+            </form>
         </div>
     </section>
 </main>
