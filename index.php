@@ -28,6 +28,7 @@
   <div class="item"><a href="#contact"><span>Contact</span></a></div>
   <div class="item"><a href="https://github.com/nathbout2"><span>Github</span></a></div>
   <div class="item"><a href="https://www.linkedin.com/in/nathan-boutaud/"><span>LinkedIn</span></a></div>
+  <img src="./img/computer_boy.png" class="computer_boy_logo" alt="" srcset="">
 </div>
 
 <header>
@@ -75,19 +76,26 @@
    <section id="contact" class="contact">
     <h1>Contact</h1>
     <div class="container">
-            <form action="/action_page.php">
-                <input type="text" id="fname" name="firstname" placeholder="Name">
+    <div id="global">
 
-                <input id="emailAddress" type="email" name="email" placeholder="Email">
+<form action="form.php" method="post">
+<label for="objet">Objet</label>
+<input type="text" value="" id="objet" name="object_value">
 
-                <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+</div>
+<div>
+<label for="mail">E-mail :</label>
+<input type="email" value="" id="mail" name="mail_value">
 
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </section>
-</main>
+</div>
+<div>
+<label for="msg">Message :</label>
+<textarea name="message_value" id="msg"></textarea>
 
+</div>
+<div class="button">
+<button type="submit">Envoyer</button>
+</div>
                 <?php
                 foreach ($result as $project) {
                 ?>

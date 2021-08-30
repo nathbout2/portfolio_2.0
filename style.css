@@ -40,6 +40,8 @@ body {
   bottom: 20px;
   left: 20px;
   font-family:"Branic";
+  display: flex;
+  justify-content: space-between;
   
 }
 .menu:hover {
@@ -151,6 +153,11 @@ span {
 }
 .menu:hover .item:nth-child(10) {
   transition-delay: 0.7s;
+}
+
+.computer_boy_logo{
+  height: 11vh;
+  width: 13vh;
 }
 /*end menu */
 
