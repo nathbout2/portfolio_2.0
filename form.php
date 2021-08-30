@@ -5,7 +5,7 @@ if (isset($_POST["mail_value"])&&!empty($_POST["mail_value"])) {
     $mail = $_POST["mail_value"];
     $msg = $_POST["message_value"];
     
-    $recipient = "druetjb@gmail.com";
+    $recipient = "nathbout2@gmail.com";
     $subject = "Formulaire";
     
     $message=$mail.'<br>'.$msg;

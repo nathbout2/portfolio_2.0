@@ -28,7 +28,6 @@
   <div class="item"><a href="#contact"><span>Contact</span></a></div>
   <div class="item"><a href="https://github.com/nathbout2"><span>Github</span></a></div>
   <div class="item"><a href="https://www.linkedin.com/in/nathan-boutaud/"><span>LinkedIn</span></a></div>
-  <img src="./img/computer_boy.png" class="computer_boy_logo" alt="" srcset="">
 </div>
 
 <header>
@@ -45,7 +44,7 @@
 <main>
     <section class ="presentation">
         <div class="header__presentation">
-            <img src="./img/work2.jpg" alt="" srcset="" class="header__presentation__photo">
+        <img src="./img/computer_boy.png" class="computer_boy_logo" class="header__presentation__photo">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quam minima nesciunt id vitae beatae necessitatibus blanditiis fugiat illo dignissimos illum suscipit quidem rerum eligendi officiis minus, exercitationem commodi perspiciatis.
             </p>
@@ -75,7 +74,7 @@
     
    <section id="contact" class="contact">
     <h1>Contact</h1>
-    <div class="container">
+    <div class="contact_input">
     <div id="global">
 
 <form action="form.php" method="post">
@@ -96,13 +95,7 @@
 <div class="button">
 <button type="submit">Envoyer</button>
 </div>
-                <?php
-                foreach ($result as $project) {
-                ?>
-                        <h2><?= $project['project_tittle'] ?></h2>
-                <?php
-                }
-                ?>
+      
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="main.js"></script>
 </body>
