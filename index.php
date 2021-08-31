@@ -16,6 +16,7 @@
         <meta name="description" content="Portfolio de Nathan Boutaud, web designer">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/computer_boy.png" type="image/png">
         <title>Nathan</title>
     </head>
     <body>
@@ -61,9 +62,9 @@
         <div class="header_projet">
             <h3>Fil d'ariane</h3>
         </div>
-        <div class="projet">
+        <div class="projet_1">
             <img src="./img/work2.jpg" alt="" srcset="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quam minima nesciunt id vitae beatae necessitatibus blanditiis fugiat illo dignissimos illum suscipit quidem rerum eligendi officiis minus, exercitationem commodi perspiciatis.
+            <p class="text_projet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quam minima nesciunt id vitae beatae necessitatibus blanditiis fugiat illo dignissimos illum suscipit quidem rerum eligendi officiis minus, exercitationem commodi perspiciatis.
             </p>
         </div>
         <div class="projet_picture">
@@ -90,11 +91,11 @@
 <div>
 <label for="msg">Message :</label>
 <textarea name="message_value" id="msg"></textarea>
+</div>
 
-</div>
-<div class="button">
-<button type="submit">Envoyer</button>
-</div>
+
+</section>
+
       
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="main.js"></script>

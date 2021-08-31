@@ -40,8 +40,6 @@ body {
   bottom: 20px;
   left: 20px;
   font-family:"Branic";
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 
   
@@ -305,32 +303,20 @@ p{
 }
 input[type=text], textarea, input[type=email] {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  margin-right: 0px;
-  margin-left: 0px;
-  resize: vertical;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 label{margin-right: 0px;
   margin-left: 0px;
   width: 100%;}
 
-input[type=submit] {
-  background-color: #707070;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-input[type=submit]:hover {
-  background-color: #424242;
-}
 
 .container {
   /* Ajouter box-sizing */
@@ -358,8 +344,26 @@ input[type=submit]:hover {
   width: 37.5rem;
   color: white;
 }
+
+.projet_1{
+  flex-direction: row;
+  display: flex;
 }
-.Projet{
+
+.projet_picture{
+  display: flex;
+  justify-content: space-around;
+}
+img{
+  width:65vh ;
+  height: 65vh;
+}
+
+.text_projet{
+
+}
+}
+.projet{
 
 }
 
@@ -376,7 +380,9 @@ margin-bottom: 10vw;
   justify-content: center;
 }
 
-.button{
-  background: none;
-}
+
+
+
+
+
 
