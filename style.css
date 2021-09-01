@@ -329,6 +329,17 @@ label{margin-right: 0px;
   margin:0 auto;
 }
 
+.projet_1{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.projet_1-img{}
+.text_projet{
+  width: 50vw;
+}
 
 @media screen and (min-width: 30rem) {
   

@@ -63,7 +63,7 @@
             <h3>Fil d'ariane</h3>
         </div>
         <div class="projet_1">
-            <img src="./img/work2.jpg" alt="" srcset="">
+            <img src="./img/work2.jpg" alt="" srcset="" class="projet_1-img">
             <p class="text_projet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quam minima nesciunt id vitae beatae necessitatibus blanditiis fugiat illo dignissimos illum suscipit quidem rerum eligendi officiis minus, exercitationem commodi perspiciatis.
             </p>
         </div>
