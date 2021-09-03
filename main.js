@@ -6,7 +6,7 @@ const sr =ScrollReveal({
 sr.reveal('.presentation,h2,.header_projet,.projet,projet_picturet',{
 });
 
-sr.reveal('h2,.header_projet,.projet,projet_picturet,.contact',{
+sr.reveal('h2,.header_projet,.projet,projet_picturet,.contact,.contact_input,.projet_picture',{
     delay:300
 })
 

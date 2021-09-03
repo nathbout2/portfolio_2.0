@@ -1,12 +1,15 @@
 <?php
     require_once('db-connect.php');
-    $sql = 'SELECT * FROM `projet`';
+    $sql = 'SELECT * FROM `project`';
     $query = $db->prepare($sql);
     $query->execute();
     $result = $query->fetchAll(PDO::FETCH_ASSOC);
     /* var_dump($result); */
 
 ?>
+            <?php
+                foreach ($result as $projet) {
+            ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -60,12 +63,11 @@
 
     <section class ="projet">
         <div class="header_projet">
-            <h3>Fil d'ariane</h3>
+            <h3><?=$projet['project_tittle']?></h3>
         </div>
         <div class="projet_1">
-            <img src="./img/work2.jpg" alt="" srcset="" class="projet_1-img">
-            <p class="text_projet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quam minima nesciunt id vitae beatae necessitatibus blanditiis fugiat illo dignissimos illum suscipit quidem rerum eligendi officiis minus, exercitationem commodi perspiciatis.
-            </p>
+            <img src="<?=$projet['project_picture']?>" alt="" srcset="" class="projet_1-img">
+            <p class="text_projet"<?=$projet['project_context']?></p>
         </div>
         <div class="projet_picture">
             <img src="./img/work2.jpg" alt="" srcset="">
@@ -92,12 +94,17 @@
 <label for="msg">Message :</label>
 <textarea name="message_value" id="msg"></textarea>
 </div>
-
-
+<section class="container">
+  <button data-hover="On commence quand ?"><div>Envoyer</div></button>
+</section>
 </section>
 
       
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="main.js"></script>
+
+<?php
+                    }
+                ?>
 </body>
 </html>
