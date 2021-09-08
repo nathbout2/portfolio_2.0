@@ -7,9 +7,7 @@
     /* var_dump($result); */
 
 ?>
-            <?php
-                foreach ($result as $projet) {
-            ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -61,17 +59,17 @@
     </div>
 
 
-    <section class ="projet">
+    <section <?=$project['project_id']?>>
         <div class="header_projet">
-            <h3><?=$projet['project_tittle']?></h3>
+            <h3><?=$project['project_title']?></h3>
         </div>
         <div class="projet_1">
-            <img src="<?=$projet['project_picture']?>" alt="" srcset="" class="projet_1-img">
-            <p class="text_projet"<?=$projet['project_context']?></p>
+            <img src="<?=$project['project_picture_1']?>" alt="" srcset="" class="projet_1-img">
+            <p class="text_projet"<?=$projet['project_context']?>></p>
         </div>
         <div class="projet_picture">
-            <img src="./img/work2.jpg" alt="" srcset="">
-            <img src="./img/work2.jpg" alt="" srcset="">
+            <img src="<?=$project['project_picture_2']?>" alt="" srcset="">
+            <img src="<?=$project['project_picture_3']?>" alt="" srcset="">
         </div>
     </section>
     
@@ -103,8 +101,6 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="main.js"></script>
 
-<?php
-                    }
-                ?>
+
 </body>
 </html>
