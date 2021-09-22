@@ -14,7 +14,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <meta name="description" content="Portfolio de Nathan Boutaud, web designer">
+        <meta name="description" content="Portfolio de Nathan Boutaud, designer UI">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./img/computer_boy.png" type="image/png">
@@ -59,17 +59,17 @@
     </div>
 
 
-    <section <?=$project['project_id']?>>
+    <section><?$project['project_id']?>
         <div class="header_projet">
-            <h3><?=$project['project_title']?></h3>
+            <h3><?$project['project_title']?></h3>
         </div>
         <div class="projet_1">
-            <img src="<?=$project['project_picture_1']?>" alt="" srcset="" class="projet_1-img">
-            <p class="text_projet"<?=$projet['project_context']?>></p>
+            <img src="<?$project['project_picture_1']?>" alt="" srcset="" class="projet_1-img">
+            <p class="text_projet"><?$projet['project_context']?></p>
         </div>
         <div class="projet_picture">
-            <img src="<?=$project['project_picture_2']?>" alt="" srcset="">
-            <img src="<?=$project['project_picture_3']?>" alt="" srcset="">
+            <img src="<?$project['project_picture_2']?>" alt="" srcset="">
+            <img src="<?$project['project_picture_3']?>" alt="" srcset="">
         </div>
     </section>
     
