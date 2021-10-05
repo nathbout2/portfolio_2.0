@@ -4,12 +4,25 @@ $dbname ='backoffice_portfolio';
 $username ='root';
 $password ='';
 try {
-$db = new PDO("mysql:host=$servername; dbname=$dbname",$username, $password);
-$db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-/* echo 'Success'; */
+    $db = new PDO("mysql:host=$servername; dbname=$dbname",$username, $password);
+    $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    /* echo 'Success'; */
 } catch (PDOException $e) {
-echo 'Error Connection : '.$e->getMessage();
+    echo 'Error Connection : '.$e->getMessage();
 }
+
+/* $servername ='promo-68.codeur.online';
+$dbname ='williamsc_backoffice';
+$username ='williamsc';
+$password ='on3zxq186gb+nw==';
+try {
+    $db = new PDO("mysql:host=$servername; dbname=$dbname",$username, $password);
+    $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+} catch (PDOException $e) {
+    echo 'Error Connection : '.$e->getMessage();
+} */
+
 
 /* <?php
 $servername = 'localhost';

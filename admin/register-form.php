@@ -9,19 +9,19 @@
 <body>
     <form action="register-form-handler.php" method="post">
         <div class="">
-            <label for="input-user_name"> Nom d'utilisateur : </label>
+            <label for="input-username"> Nom d'utilisateur : </label>
             <input type="text" name="username" id="input-username">
         </div>
         <div class="">
-            <label for="input-user_email"> Votre email : </label>
+            <label for="input-email"> Votre email : </label>
             <input type="email" name="email" id="input-email">
         </div>
         <div class="">
-            <label for="input-user_password"> Mot de passe : </label>
+            <label for="input-password"> Mot de passe : </label>
             <input type="password" name="password" id="input-password">
         </div>
         <div class="">
-            <label for="input-user_confirmation"> Confirmer le Mot de passe : </label>
+            <label for="input-confirmation"> Confirmer le Mot de passe : </label>
             <input type="password" name="confirmation" id="input-confirmation">
             <span id="error"></span>
         </div>

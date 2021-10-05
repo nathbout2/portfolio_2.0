@@ -4,12 +4,12 @@ session_start();
 if($_SESSION['username']){
             if($_POST){
                 if(
-                isset($_POST['idprojets']) &&!empty($_POST['idprojets'])&&
+                isset($_POST['idproject']) &&!empty($_POST['idproject'])&&
                 isset($_FILES['project_picture'])&&!empty($_FILES['project_picture'])
             ){
             
 
-            $id=strip_tags($_POST['idprojets']);
+            $id=strip_tags($_POST['idproject']);
             $picture = $_FILES['project_picture'];
             
 
@@ -65,7 +65,7 @@ if($_SESSION['username']){
             
             
             require_once("db-connect.php");
-            $sql ='UPDATE `projets` SET `projets_image`=:projets_image WHERE `idprojets`=:idprojets';
+            $sql ='UPDATE `projets` SET `projets_image`=:projets_image WHERE `idproject`=:idproject';
 
 
             $query = $db ->prepare($sql);
@@ -77,14 +77,14 @@ if($_SESSION['username']){
 
 
             // Nécessaire pour faire fonctionner le bouton retour
-            $sql ='SELECT*FROM `projets` WHERE `idprojets`=:id';
+            $sql ='SELECT*FROM `projets` WHERE `idproject`=:id';
             $query = $db->prepare($sql);
             $query->bindValue(':id', $id, PDO::PARAM_STR);
             $query ->execute();
             $result = $query->fetch();
 
 ?>
-        <a href="projects-details.php?id=<?= $result['idprojets']?>">
+        <a href="projects-details.php?id=<?= $result['idproject']?>">
          <button>Retour</button> 
         </a>
 

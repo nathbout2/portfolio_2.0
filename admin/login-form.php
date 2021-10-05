@@ -10,7 +10,7 @@
    <form action="login-form-handler.php" method="post">
        <div>
             <label for="input_name">Nom d'utilisateur</label>
-            <input type="text" name="use_rname">
+            <input type="text" name="username">
        </div>
        <div>
        <label for="input_password" input="password">Mot de passe</label>

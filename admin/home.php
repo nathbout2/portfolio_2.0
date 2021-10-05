@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-if($_SESSION['user_name']){
-    echo $_SESSION['success'];
+if($_SESSION['username']){
     require_once('db-connect.php');
-    $_sql = 'SELECT * FROM `backoffice_portfolio`';
+    $_sql = 'SELECT * FROM `project`';
     $query = $db->prepare($_sql);
     $query ->execute();
     $result = $query->fetchALL(PDO::FETCH_ASSOC);
     /* var_dump($result); */
+
 }
 
 
@@ -24,13 +24,17 @@ if($_SESSION['user_name']){
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <?php echo $_SESSION['success'];?>
+    </div>
+    <div>Bonjour <?php echo $_SESSION['username'];?> </div>
 <div class="admin_projet">
     <a href="add-form.php"><button>Ajouter un projet</button></a><br>
 
 <?php
     foreach ($result as $projet) {
 ?>
- <a href="project-details.php?id=<?=$projet['idproject']?>"><?=$projet['project_title']?></a>
+ <a href="projects-details.php?id=<?=$projet['idproject']?>"><?=$projet['project_title']?></a>
 <?php
     }
 ?>

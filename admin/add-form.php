@@ -18,20 +18,8 @@ session_start();
             <input type="text" id="input_title" name="project_title">
         </div>
         <div>
-            <label for="input_context">Contexte</label>
-            <textarea name="project_context" id="input_context" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <label for="input_image">Capture du projet</label>
-            <input type="file" id="project_picture_1" name="project_picture_1">
-        </div>
-        <div>
-            <label for="input_image">Capture du projet</label>
-            <input type="file" id="project_picture_2" name="project_picture_2">
-        </div>
-        <div>
-            <label for="input_image">Capture du projet</label>
-            <input type="file" id="project_picture_3e" name="project_picture_3">
+            <label for="input_picture">Image</label>
+            <input type="date" id="input_begin" name="project_begin">
         </div>
         <div>
             <label for="input_link">Lien du projet</label>
