@@ -18,11 +18,11 @@ session_start();
             <input type="text" id="input_title" name="project_title">
         </div>
         <div>
-            <label for="input_picture">Image</label>
-            <input type="date" id="input_begin" name="project_begin">
+            <label for="input_picture">Capture du projet</label>
+            <input type="file" id="input_picture" name="input_picture">
         </div>
         <div>
-            <label for="input_link">Lien du projet</label>
+            <label for="input_link">Lien</label>
             <input type="text" id="input_link" name="project_link">
         </div>
 

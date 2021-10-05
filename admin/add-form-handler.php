@@ -76,13 +76,12 @@ if($_SESSION['username']){
                         $picture = basename( $_FILES["project_picture"]["name"]) ;
         
                     }}}
-     
-                        }  else {      
-                        $sql ="INSERT INTO project (project_title,project_picture,project_link) VALUES(:project_title,:project_picture,:project_link)";
+                        
+                        $sql ="INSERT INTO project (project_title, project_picture, project_link) VALUES(:project_title,:project_picture,:project_link)";
                         $query = $db ->prepare($sql);
                         $query->bindValue(':project_title', $title, PDO::PARAM_STR);
+                        $query->bindValue(':project_link', $projetlink, PDO::PARAM_STR);
                         $query->bindValue(':project_picture', $picture, PDO::PARAM_STR);
-                        $query->bindValue(':project_link', $link, PDO::PARAM_STR);
                         $query->execute();
                         echo 'Sucess';
                         echo 'Les données ont été enregistré dans le base de données !'; 
@@ -91,18 +90,11 @@ if($_SESSION['username']){
                         echo 'Remplissez tous les champs';echo '<br><a href=add-form.php> Retour </a>';
                     } 
                 }
-            }
-            
-
-        } else {
+            } else{
             echo 'Il manque une information !';
-        }
-                
-            
-    } else {
+        }else{
         echo 'Pour acceder à cette page vous devez publier un projet';
-    }
-} else {
+    } else {
     echo 'Vous n\'êtes pas identifiez';
 }
 
