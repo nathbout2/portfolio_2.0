@@ -1,5 +1,5 @@
 <?php
-    require_once('db-connect.php');
+    require_once('admin/db-connect.php');
     $sql = 'SELECT * FROM `project`';
     $query = $db->prepare($sql);
     $query->execute();
@@ -14,7 +14,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Minimalist Portfolio</title>
+		<title>Bienvenue</title>
 		<link rel="stylesheet" href="styles.css" />
 
 		<!-- locomotive-scroll -->
@@ -42,7 +42,7 @@
 				<!-- header -->
 				<div class="header">
 					<div class="header-container">
-						<h1>Nathan Boutaud<br />Web<br />&nbsp;Designer</h1>
+						<h1>Nathan Boutaud<br />UX/UI<br />&nbsp;Designer</h1>
 					</div>
 				</div>
 
@@ -113,7 +113,7 @@
 								<div class="divider"></div>
 
 								<div class="menu__item">
-									<a class="menu__item-link">/ Unlocked</a>
+									<a class="menu__item-link">/ Fil d'Ariane</a>
 									<img class="menu__item-img" src="images/project-two.jpeg" />
 									<div class="marquee">
 										<div class="marquee__inner">
@@ -128,14 +128,14 @@
 								<div class="divider"></div>
 
 								<div class="menu__item">
-									<a class="menu__item-link">/ Offbeat Radio</a>
+									<a class="menu__item-link">/ Nowher</a>
 									<img class="menu__item-img" src="images/project-three.jpeg" />
 									<div class="marquee">
 										<div class="marquee__inner">
-											<span>Offbeat Radio</span>
-											<span>Offbeat Radio</span>
-											<span>Offbeat Radio</span>
-											<span>Offbeat Radio</span>
+											<span>Nowher</span>
+											<span>Nowher</span>
+											<span>Nowher</span>
+											<span>Nowher</span>
 										</div>
 									</div>
 								</div>
@@ -143,32 +143,19 @@
 								<div class="divider"></div>
 
 								<div class="menu__item">
-									<a class="menu__item-link">/ Brutal</a>
+									<a class="menu__item-link">/ JPG</a>
 									<img class="menu__item-img" src="images/project-four.jpeg" />
 									<div class="marquee">
 										<div class="marquee__inner">
-											<span>Brutal</span>
-											<span>Brutal</span>
-											<span>Brutal</span>
-											<span>Brutal</span>
+											<span>JPG</span>
+											<span>JPG</span>
+											<span>JPG</span>
+											<span>JPG</span>
 										</div>
 									</div>
 								</div>
 
 								<div class="divider"></div>
-
-								<div class="menu__item">
-									<a class="menu__item-link">/ The Crew</a>
-									<img class="menu__item-img" src="images/project-five.jpeg" />
-									<div class="marquee">
-										<div class="marquee__inner" aria-hidden="true">
-											<span>The Crew</span>
-											<span>The Crew</span>
-											<span>The Crew</span>
-											<span>The Crew</span>
-										</div>
-									</div>
-								</div>
 							</nav>
 						</div>
 					</div>
@@ -210,10 +197,9 @@
 
 				<section class="socials">
 					<div class="socials-container">
-						<div class="socials-id ln"><a href="">Linkedin</a></div>
-						<div class="socials-id ig"><a href="">Instagram</a></div>
-						<div class="socials-id ig"><a href="">Github</a></div>
-						<div class="socials-id ig"><a href="">Dribbble</a></div>
+						<div class="socials-id ln"><a href="https://www.linkedin.com/in/nathan-boutaud/">Linkedin</a></div>
+						<div class="socials-id ig"><a href="https://www.instagram.com/computer.__.boy_/">Instagram</a></div>
+						<div class="socials-id ig"><a href="https://github.com/nathbout2">Github</a></div>
 					</div>
 				</section>
 
